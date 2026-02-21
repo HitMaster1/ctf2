@@ -45,7 +45,7 @@ tr:hover td{background:rgba(0,255,65,.03)}
     <p style="opacity:.3;font-size:12px;margin-top:7px">Threat Intel · Password Scoring · Live Leaderboard</p>
   </div>
   <div class="card">
-    <input id="nm" type="text"     placeholder="👤 Hacker Alias" maxlength="30" autocomplete="off">
+    <input id="nm" type="text"     placeholder="👤 Enter a Name" maxlength="30" autocomplete="off">
     <input id="pw" type="password" placeholder="🔑 Password to Analyze" autocomplete="new-password">
     <button class="btn" id="sb">🚀 ANALYZE PASSWORD</button>
   </div>
@@ -89,7 +89,7 @@ tr:hover td{background:rgba(0,255,65,.03)}
   function go(){
     var name=document.getElementById('nm').value.trim();
     var pw=document.getElementById('pw').value;
-    if(!name){setRes('⚠️ Enter a hacker alias','#f44');return;}
+    if(!name){setRes('⚠️ Enter a Name,'#f44');return;}
     if(!pw){setRes('⚠️ Enter a password','#f44');return;}
     var btn=document.getElementById('sb');
     btn.disabled=true;btn.textContent='⏳ ANALYZING...';
